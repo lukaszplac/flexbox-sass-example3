@@ -166,7 +166,242 @@ body {
             font-size: 8px; } }
     body .my-jumbotron .my-carousel a {
       visibility: hidden; }
-  body .my-section3, body .my-section5 {
+  body .my-section2 {
+    -webkit-box-flex: 0 0 100%;
+    -moz-box-flex: 0 0 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-content: center;
+    -moz-align-content: center;
+    -ms-align-content: center;
+    align-content: center;
+    margin-bottom: 80px; }
+    body .my-section2 .my-section2-content {
+      -webkit-box-flex: 0 0 100%;
+      -moz-box-flex: 0 0 100%;
+      -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-align-items: flex-start;
+      -moz-align-items: flex-start;
+      -ms-align-items: flex-start;
+      align-items: flex-start;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      -webkit-align-content: center;
+      -moz-align-content: center;
+      -ms-align-content: center;
+      align-content: center;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      body .my-section2 .my-section2-content .my-section2-content-left {
+        -webkit-box-flex: 0 1 40%;
+        -moz-box-flex: 0 1 40%;
+        -webkit-flex: 0 1 40%;
+        -ms-flex: 0 1 40%;
+        flex: 0 1 40%; }
+        @media screen and (max-width: 576px) {
+          body .my-section2 .my-section2-content .my-section2-content-left {
+            -webkit-box-flex: 0 1 80%;
+            -moz-box-flex: 0 1 80%;
+            -webkit-flex: 0 1 80%;
+            -ms-flex: 0 1 80%;
+            flex: 0 1 80%; } }
+      body .my-section2 .my-section2-content .my-section2-content-right {
+        padding: 0 40px;
+        -webkit-box-flex: 0 1 40%;
+        -moz-box-flex: 0 1 40%;
+        -webkit-flex: 0 1 40%;
+        -ms-flex: 0 1 40%;
+        flex: 0 1 40%; }
+        @media screen and (max-width: 576px) {
+          body .my-section2 .my-section2-content .my-section2-content-right {
+            -webkit-box-flex: 0 1 80%;
+            -moz-box-flex: 0 1 80%;
+            -webkit-flex: 0 1 80%;
+            -ms-flex: 0 1 80%;
+            flex: 0 1 80%;
+            padding: 0; } }
+        body .my-section2 .my-section2-content .my-section2-content-right .my-section2-content-right-container {
+          background-color: black;
+          position: relative;
+          max-width: 600px;
+          box-shadow: 10px 10px 40px 1px #888888; }
+          body .my-section2 .my-section2-content .my-section2-content-right .my-section2-content-right-container .my-section2-content-right-caption {
+            position: absolute;
+            display: block;
+            width: 100%;
+            text-align: center;
+            transform: translateY(-50%);
+            top: 50%;
+            left: 0; }
+            body .my-section2 .my-section2-content .my-section2-content-right .my-section2-content-right-container .my-section2-content-right-caption h2 {
+              color: #A9A9A9;
+              text-transform: uppercase;
+              transition: .3s; }
+              @media screen and (max-width: 576px) {
+                body .my-section2 .my-section2-content .my-section2-content-right .my-section2-content-right-container .my-section2-content-right-caption h2 {
+                  font-size: 20px; } }
+              body .my-section2 .my-section2-content .my-section2-content-right .my-section2-content-right-container .my-section2-content-right-caption h2:hover {
+                color: white;
+                cursor: pointer;
+                transition: .3s; }
+              body .my-section2 .my-section2-content .my-section2-content-right .my-section2-content-right-container .my-section2-content-right-caption h2 i {
+                padding: 0 20px; }
+  body .my-section3 {
+    -webkit-box-flex: 0 0 100%;
+    -moz-box-flex: 0 0 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-content: center;
+    -moz-align-content: center;
+    -ms-align-content: center;
+    align-content: center;
+    background-color: black;
+    margin-bottom: 80px;
+    padding-bottom: 40px; }
+    body .my-section3 .my-section-heading h1 {
+      color: white; }
+    body .my-section3 .my-section3-content {
+      -webkit-box-flex: 0 0 100%;
+      -moz-box-flex: 0 0 100%;
+      -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      -webkit-align-content: center;
+      -moz-align-content: center;
+      -ms-align-content: center;
+      align-content: center;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      body .my-section3 .my-section3-content .my-section3-item {
+        -webkit-box-flex: 0 1 23%;
+        -moz-box-flex: 0 1 23%;
+        -webkit-flex: 0 1 23%;
+        -ms-flex: 0 1 23%;
+        flex: 0 1 23%;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        -ms-flex-pack: center;
+        -webkit-align-content: center;
+        -moz-align-content: center;
+        -ms-align-content: center;
+        align-content: center;
+        height: 250px;
+        text-align: center;
+        padding: 10px 40px;
+        border-left: 1px solid gray; }
+        body .my-section3 .my-section3-content .my-section3-item:last-child {
+          border-right: 1px solid gray; }
+          @media screen and (max-width: 576px) {
+            body .my-section3 .my-section3-content .my-section3-item:last-child {
+              border-right: none; } }
+        @media screen and (max-width: 576px) {
+          body .my-section3 .my-section3-content .my-section3-item {
+            border-left: none;
+            border-bottom: 1px solid gray; } }
+        body .my-section3 .my-section3-content .my-section3-item i {
+          color: #B98B59;
+          padding: 20px 0;
+          transition: .3s; }
+          body .my-section3 .my-section3-content .my-section3-item i:hover {
+            opacity: .5;
+            cursor: pointer;
+            transition: .3s; }
+        body .my-section3 .my-section3-content .my-section3-item h4 {
+          color: white;
+          text-transform: uppercase;
+          font-size: 20px; }
+        body .my-section3 .my-section3-content .my-section3-item p {
+          color: #A9A9A9; }
+  body .my-section5 {
     background-color: #f7f7f7; }
 
 .my-jumbo-button {
@@ -186,7 +421,26 @@ body {
   @media screen and (max-width: 576px) {
     .my-jumbo-button {
       padding: 5px 20px;
-      margin: 5px 0;
+      margin: 10px 0;
       font-size: 10px; } }
+
+.my-section-heading {
+  padding: 70px 0 30px 0;
+  text-align: center; }
+  @media screen and (max-width: 576px) {
+    .my-section-heading {
+      padding: 10px 0 10px 0; } }
+  .my-section-heading h1 {
+    text-transform: uppercase;
+    font-weight: 700; }
+    @media screen and (max-width: 576px) {
+      .my-section-heading h1 {
+        padding: 10px 0 10px 0;
+        font-size: 25px; } }
+  .my-section-heading p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    color: #A9A9A9; }
 
 /*# sourceMappingURL=style.css.map */

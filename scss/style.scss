@@ -2,7 +2,7 @@
 @import '../helpers/flex-mixin.scss';
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Oleo+Script');
-$font-gray: #777777;
+$font-gray: #A9A9A9;
 $main-bg-color: white;
 $sub-bg-color: #f7f7f7;
 $border-color: #f1f1f1;
@@ -122,7 +122,137 @@ body {
 		}
 	}
 
-	.my-section3, .my-section5 {
+	.my-section2 {
+		@include flex(0 0 100%);
+		@include flexbox();
+		@include flex-direction(column);
+		@include align-items(center);
+		@include justify-content(center);
+		@include align-content(center);
+		margin-bottom: 80px;
+		.my-section2-content {
+			@include flex(0 0 100%);
+			@include flexbox();
+			@include flex-direction(row);
+			@include align-items(flex-start);
+			@include justify-content(center);
+			@include align-content(center);
+			@include flex-wrap(wrap);
+			.my-section2-content-left {
+				@include flex(0 1 40%);
+				@media screen and (max-width: $small-dev) {
+					@include flex(0 1 80%);
+				}
+			}
+			.my-section2-content-right {
+				padding: 0 40px;
+				@include flex(0 1 40%);
+				@media screen and (max-width: $small-dev) {
+					@include flex(0 1 80%);
+					padding: 0;
+				}
+				.my-section2-content-right-container {
+					background-color: rgb(0,0,0);
+					position: relative;
+					max-width: 600px;
+					box-shadow: 10px 10px 40px 1px #888888;
+					.my-section2-content-right-caption {
+						position: absolute;
+						display: block;
+						width: 100%;
+						text-align: center;
+						transform: translateY(-50%);
+						top: 50%;
+						left: 0;
+						h2 {
+							color: #A9A9A9;
+							text-transform: uppercase;
+							transition: .3s;
+							@media screen and (max-width: $small-dev) {
+								font-size: 20px;
+							}
+							&:hover {
+								color: white;
+								cursor: pointer;
+								transition: .3s;
+							}
+							i {
+								padding: 0 20px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.my-section3 {
+		@include flex(0 0 100%);
+		@include flexbox();
+		@include flex-direction(column);
+		@include align-items(center);
+		@include justify-content(center);
+		@include align-content(center);
+		background-color: black;
+		margin-bottom: 80px;
+		padding-bottom: 40px;
+		.my-section-heading {
+			h1 {
+				color: white;
+			}
+		}
+		.my-section3-content {
+			@include flex(0 0 100%);
+			@include flexbox();
+			@include flex-direction(row);
+			@include align-items(center);
+			@include justify-content(center);
+			@include align-content(center);
+			@include flex-wrap(wrap);
+			.my-section3-item {
+				@include flex(0 1 23%);
+				@include flexbox();
+				@include flex-direction(column);
+				@include align-items(center);
+				@include justify-content(center);
+				@include align-content(center);
+				height: 250px;
+				text-align: center;
+				padding: 10px 40px;
+				border-left: 1px solid gray;
+				&:last-child {
+					border-right: 1px solid gray;
+					@media screen and (max-width: $small-dev) {
+						border-right: none;
+					}
+				}
+				@media screen and (max-width: $small-dev) {
+					border-left: none;
+					border-bottom: 1px solid gray;
+				}
+				i {
+					color: $main-color-hover;
+					padding: 20px 0;
+					transition: .3s;
+					&:hover {
+						opacity: .5;
+						cursor: pointer;
+						transition: .3s;
+					}
+				}
+				h4 {
+					color: white;
+					text-transform: uppercase;
+					font-size: 20px;
+				}
+				p {
+					color: $font-gray;
+				}
+			}
+		}
+	}
+
+	.my-section5 {
 		background-color: $sub-bg-color;
 	}				//changind bg color only for specific sections
 }
@@ -144,7 +274,29 @@ body {
 	}
 	@media screen and (max-width: $small-dev) {
 		padding: 5px 20px;
-		margin: 5px 0;
+		margin: 10px 0;
 		font-size: 10px;
+	}
+}
+
+.my-section-heading {
+	padding: 70px 0 30px 0;
+	text-align: center;
+	@media screen and (max-width: $small-dev) {
+		padding: 10px 0 10px 0;
+	}
+	h1 {
+		text-transform: uppercase;
+		font-weight: 700;
+		@media screen and (max-width: $small-dev) {
+			padding: 10px 0 10px 0;
+			font-size: 25px;
+		}
+	}
+	p {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 14px;
+		color: $font-gray;
 	}
 }
