@@ -194,7 +194,7 @@ body {
 		@include justify-content(center);
 		@include align-content(center);
 		background-color: black;
-		margin-bottom: 80px;
+		margin-bottom: 40px;
 		padding-bottom: 40px;
 		.my-section-heading {
 			h1 {
@@ -247,6 +247,106 @@ body {
 				}
 				p {
 					color: $font-gray;
+				}
+			}
+		}
+	}
+
+	.my-section4 {
+		@include flex(0 0 100%);
+		@include flexbox();
+		@include flex-direction(column);
+		@include align-items(center);
+		@include justify-content(center);
+		@include align-content(center);
+		margin-bottom: 40px;
+		padding-bottom: 40px;
+		.my-section4-content {
+			@include flex(0 0 100%);
+			@include flexbox();
+			@include flex-direction(column);
+			@include align-items(center);
+			@include justify-content(center);
+			@include align-content(center);
+			.my-section4-tabs-nav {
+				@include flex(0 0 100%);
+				margin: 20px 0;
+				background-color: #edebec;
+				border-radius: 30px;
+				border: 1px solid gray;
+				li {
+					padding: 0 20px;
+					border-right: 1px solid gray;
+					a {
+						color: black;
+						border-bottom: 5px solid #edebec;
+						padding: 10px;
+						margin-bottom: 1px;
+						height: 100%;
+						text-transform: uppercase;
+						&:hover {
+							border-bottom: 5px solid $main-color-hover;
+						}
+					}
+					a.active {
+						background-color: #edebec;
+						border: none;
+						font-size: 16px;
+						border-bottom: 5px solid $main-color-hover;
+					}
+					&:last-child {
+						border-right: none;
+					}
+				}
+			}
+			.my-section4-tabs {
+				@include flex(0 0 100%);
+				@include flexbox();
+				@include flex-direction(row);
+				@include align-items(center);
+				@include justify-content(center);
+				@include align-content(center);
+				.my-tab-pane {
+					@include flex(0 1 80%);
+					.my-section4-tab {
+						@include flexbox();
+						@include flex-direction(row);
+						@include align-items(center);
+						@include justify-content(center);
+						@include align-content(center);
+						@include flex-wrap(wrap);
+						.my-pic {
+							margin: 10px 10px;
+							@include flex(0 1 23%);
+							min-width: 200px;
+							min-height: 100px;
+							max-width: 300px;
+							max-height: 200px;
+							div {
+								div {
+									display: none;
+								}
+							}
+							&:hover {
+								cursor: pointer;
+								div {
+									position: relative;
+									div {
+										color: white;
+										background-color: rgba(0,0,0, .7);
+										width: 100%;
+										height: 100%;
+										text-align: center;
+										position: absolute;
+										top: 50%;
+										transform: translateY(-50%);
+										display: block;
+										padding-top: 20%;
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 		}

@@ -310,7 +310,7 @@ body {
     -ms-align-content: center;
     align-content: center;
     background-color: black;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     padding-bottom: 40px; }
     body .my-section3 .my-section-heading h1 {
       color: white; }
@@ -401,6 +401,182 @@ body {
           font-size: 20px; }
         body .my-section3 .my-section3-content .my-section3-item p {
           color: #A9A9A9; }
+  body .my-section4 {
+    -webkit-box-flex: 0 0 100%;
+    -moz-box-flex: 0 0 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-content: center;
+    -moz-align-content: center;
+    -ms-align-content: center;
+    align-content: center;
+    margin-bottom: 40px;
+    padding-bottom: 40px; }
+    body .my-section4 .my-section4-content {
+      -webkit-box-flex: 0 0 100%;
+      -moz-box-flex: 0 0 100%;
+      -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      -webkit-align-content: center;
+      -moz-align-content: center;
+      -ms-align-content: center;
+      align-content: center; }
+      body .my-section4 .my-section4-content .my-section4-tabs-nav {
+        -webkit-box-flex: 0 0 100%;
+        -moz-box-flex: 0 0 100%;
+        -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        margin: 20px 0;
+        background-color: #edebec;
+        border-radius: 30px;
+        border: 1px solid gray; }
+        body .my-section4 .my-section4-content .my-section4-tabs-nav li {
+          padding: 0 20px;
+          border-right: 1px solid gray; }
+          body .my-section4 .my-section4-content .my-section4-tabs-nav li a {
+            color: black;
+            border-bottom: 5px solid #edebec;
+            padding: 10px;
+            margin-bottom: 1px;
+            height: 100%;
+            text-transform: uppercase; }
+            body .my-section4 .my-section4-content .my-section4-tabs-nav li a:hover {
+              border-bottom: 5px solid #B98B59; }
+          body .my-section4 .my-section4-content .my-section4-tabs-nav li a.active {
+            background-color: #edebec;
+            border: none;
+            font-size: 16px;
+            border-bottom: 5px solid #B98B59; }
+          body .my-section4 .my-section4-content .my-section4-tabs-nav li:last-child {
+            border-right: none; }
+      body .my-section4 .my-section4-content .my-section4-tabs {
+        -webkit-box-flex: 0 0 100%;
+        -moz-box-flex: 0 0 100%;
+        -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        -ms-flex-pack: center;
+        -webkit-align-content: center;
+        -moz-align-content: center;
+        -ms-align-content: center;
+        align-content: center; }
+        body .my-section4 .my-section4-content .my-section4-tabs .my-tab-pane {
+          -webkit-box-flex: 0 1 80%;
+          -moz-box-flex: 0 1 80%;
+          -webkit-flex: 0 1 80%;
+          -ms-flex: 0 1 80%;
+          flex: 0 1 80%; }
+          body .my-section4 .my-section4-content .my-section4-tabs .my-tab-pane .my-section4-tab {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            -moz-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            -ms-justify-content: center;
+            justify-content: center;
+            -ms-flex-pack: center;
+            -webkit-align-content: center;
+            -moz-align-content: center;
+            -ms-align-content: center;
+            align-content: center;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+            body .my-section4 .my-section4-content .my-section4-tabs .my-tab-pane .my-section4-tab .my-pic {
+              margin: 10px 10px;
+              -webkit-box-flex: 0 1 23%;
+              -moz-box-flex: 0 1 23%;
+              -webkit-flex: 0 1 23%;
+              -ms-flex: 0 1 23%;
+              flex: 0 1 23%;
+              min-width: 200px;
+              min-height: 100px;
+              max-width: 300px;
+              max-height: 200px; }
+              body .my-section4 .my-section4-content .my-section4-tabs .my-tab-pane .my-section4-tab .my-pic div div {
+                display: none; }
+              body .my-section4 .my-section4-content .my-section4-tabs .my-tab-pane .my-section4-tab .my-pic:hover {
+                cursor: pointer; }
+                body .my-section4 .my-section4-content .my-section4-tabs .my-tab-pane .my-section4-tab .my-pic:hover div {
+                  position: relative; }
+                  body .my-section4 .my-section4-content .my-section4-tabs .my-tab-pane .my-section4-tab .my-pic:hover div div {
+                    color: white;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    display: block;
+                    padding-top: 20%; }
   body .my-section5 {
     background-color: #f7f7f7; }
 
