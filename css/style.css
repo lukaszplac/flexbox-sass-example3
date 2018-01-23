@@ -468,10 +468,11 @@ body {
         margin: 20px 0;
         background-color: #edebec;
         border-radius: 30px;
-        border: 1px solid gray; }
+        border: 1px solid lightgray; }
         body .my-section4 .my-section4-content .my-section4-tabs-nav li {
           padding: 0 20px;
-          border-right: 1px solid gray; }
+          border-right: 1px solid lightgray;
+          margin-bottom: .5px; }
           body .my-section4 .my-section4-content .my-section4-tabs-nav li a {
             color: black;
             border-bottom: 5px solid #edebec;
@@ -578,7 +579,144 @@ body {
                     display: block;
                     padding-top: 20%; }
   body .my-section5 {
-    background-color: #f7f7f7; }
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+    -ms-align-items: stretch;
+    align-items: stretch;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-content: center;
+    -moz-align-content: center;
+    -ms-align-content: center;
+    align-content: center;
+    background-image: url("../images/build/sec5back.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    color: white; }
+    body .my-section5:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.75);
+      display: block; }
+    body .my-section5 .my-section5-heading {
+      -webkit-box-flex: 0 1 20%;
+      -moz-box-flex: 0 1 20%;
+      -webkit-flex: 0 1 20%;
+      -ms-flex: 0 1 20%;
+      flex: 0 1 20%;
+      padding: 40px 0 30px 0;
+      z-index: 1; }
+    body .my-section5 .my-carousel {
+      -webkit-box-flex: 0 1 80%;
+      -moz-box-flex: 0 1 80%;
+      -webkit-flex: 0 1 80%;
+      -ms-flex: 0 1 80%;
+      flex: 0 1 80%; }
+      body .my-section5 .my-carousel a {
+        visibility: hidden; }
+      body .my-section5 .my-carousel div {
+        padding-bottom: 30px; }
+        body .my-section5 .my-carousel div div .my-carousel-item-content {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-direction: row;
+          -moz-flex-direction: row;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-align-items: center;
+          -moz-align-items: center;
+          -ms-align-items: center;
+          align-items: center;
+          -webkit-justify-content: center;
+          -moz-justify-content: center;
+          -ms-justify-content: center;
+          justify-content: center;
+          -ms-flex-pack: center;
+          -webkit-align-content: center;
+          -moz-align-content: center;
+          -ms-align-content: center;
+          align-content: center;
+          -webkit-flex-wrap: wrap;
+          -moz-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+          body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 {
+            -webkit-box-flex: 0 0 25%;
+            -moz-box-flex: 0 0 25%;
+            -webkit-flex: 0 0 25%;
+            -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+            padding: 15px;
+            margin: 0 15px;
+            border-radius: 5px;
+            background-color: white;
+            color: black; }
+            @media screen and (max-width: 576px) {
+              body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 {
+                -webkit-box-flex: 0 1 80%;
+                -moz-box-flex: 0 1 80%;
+                -webkit-flex: 0 1 80%;
+                -ms-flex: 0 1 80%;
+                flex: 0 1 80%;
+                background-color: initial;
+                color: white;
+                height: 30%;
+                border: 1px solid lightgray;
+                margin: 10px; } }
+            body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 img, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 img, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 img {
+              max-width: 200px;
+              max-height: 200px;
+              background-color: white;
+              padding: 20px;
+              background-color: lightgray;
+              margin: 0 auto;
+              margin: 40px 0; }
+              @media screen and (max-width: 576px) {
+                body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 img, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 img, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 img {
+                  max-width: 100px;
+                  max-height: 100px;
+                  padding: 5px; } }
+            body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 img, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 h4, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 p, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 .my-icons, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 img, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 h4, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 p, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 .my-icons, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 img, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 h4, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 p, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 .my-icons {
+              text-align: center; }
+              body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 img i, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 h4 i, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 p i, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 .my-icons i, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 img i, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 h4 i, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 p i, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 .my-icons i, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 img i, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 h4 i, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 p i, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 .my-icons i {
+                padding: 5px 5px; }
+                body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 img i:hover, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 h4 i:hover, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 p i:hover, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 .my-icons i:hover, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 img i:hover, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 h4 i:hover, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 p i:hover, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 .my-icons i:hover, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 img i:hover, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 h4 i:hover, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 p i:hover, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 .my-icons i:hover {
+                  color: #B98B59;
+                  cursor: pointer; }
+              @media screen and (max-width: 576px) {
+                body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 img, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 h4, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 p, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 .my-icons, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 img, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 h4, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 p, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 .my-icons, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 img, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 h4, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 p, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 .my-icons {
+                  font-size: smaller; } }
+            body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 h4, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 h4, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 h4 {
+              font-size: 18px;
+              margin: 0; }
+            body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 p, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 p, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 p {
+              color: gray; }
+            body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 .my-icons, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 .my-icons, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 .my-icons {
+              margin: 30px 0; }
+              @media screen and (max-width: 576px) {
+                body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 .my-icons, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 .my-icons, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 .my-icons {
+                  margin: 10px 0; } }
 
 .my-jumbo-button {
   background-color: #B98B59;

@@ -273,10 +273,11 @@ body {
 				margin: 20px 0;
 				background-color: #edebec;
 				border-radius: 30px;
-				border: 1px solid gray;
+				border: 1px solid lightgray;
 				li {
 					padding: 0 20px;
-					border-right: 1px solid gray;
+					border-right: 1px solid lightgray;
+					margin-bottom: .5px;
 					a {
 						color: black;
 						border-bottom: 5px solid #edebec;
@@ -353,8 +354,108 @@ body {
 	}
 
 	.my-section5 {
-		background-color: $sub-bg-color;
-	}				//changind bg color only for specific sections
+		&:before {
+			position: absolute;
+			top : 0;
+			left: 0;
+			content: "";
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0, .75);
+			display: block;
+		}
+		position: relative;
+		@include flexbox();
+		@include flex-direction(column);
+		@include align-items(stretch);
+		@include justify-content(center);
+		@include align-content(center);
+		background-image: url('../images/build/sec5back.jpg');
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+		color: white;
+		.my-section5-heading {
+			@include flex(0 1 20%);
+			padding: 40px 0 30px 0;
+			z-index: 1;
+		}
+		.my-carousel {
+			@include flex(0 1 80%);
+			a {
+				visibility: hidden;
+			}
+			div {
+				padding-bottom: 30px;
+				div {
+					.my-carousel-item-content {
+						@include flexbox();
+						@include flex-direction(row);
+						@include align-items(center);
+						@include justify-content(center);
+						@include align-content(center);
+						@include flex-wrap(wrap);
+						.my-carousel-item-content1, .my-carousel-item-content2, .my-carousel-item-content3 {
+							@include flex(0 0 25%);
+							padding: 15px;
+							margin: 0 15px;
+							border-radius: 5px;
+							background-color: white;
+							color: black;
+							@media screen and (max-width: $small-dev) {
+								@include flex(0 1 80%);
+								background-color: initial;
+								color: white;
+								height: 30%;
+								border: 1px solid lightgray;
+								margin: 10px;
+							}
+							img {
+								max-width: 200px;
+								max-height: 200px;
+								background-color: white;
+								padding: 20px;
+								background-color: lightgray;
+								margin: 0 auto;
+								margin: 40px 0;
+								@media screen and (max-width: $small-dev) {
+									max-width: 100px;
+									max-height: 100px;
+									padding: 5px;
+								}
+							}
+							img, h4, p, .my-icons {
+								text-align: center;
+								i {
+									padding: 5px 5px;
+									&:hover {
+										color: $main-color-hover;
+										cursor: pointer;
+									}
+								}
+								@media screen and (max-width: $small-dev) {
+									font-size: smaller;
+								}
+							}
+							h4 {
+								font-size: 18px;
+								margin: 0;
+							}
+							p {
+								color: gray;
+							}
+							.my-icons {
+								margin: 30px 0;
+								@media screen and (max-width: $small-dev) {
+									margin: 10px 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 .my-jumbo-button {
