@@ -194,7 +194,7 @@ body {
     -moz-align-content: center;
     -ms-align-content: center;
     align-content: center;
-    margin-bottom: 80px; }
+    padding-bottom: 80px; }
     body .my-section2 .my-section2-content {
       -webkit-box-flex: 0 0 100%;
       -moz-box-flex: 0 0 100%;
@@ -310,8 +310,7 @@ body {
     -ms-align-content: center;
     align-content: center;
     background-color: black;
-    margin-bottom: 40px;
-    padding-bottom: 40px; }
+    padding-bottom: 80px; }
     body .my-section3 .my-section-heading h1 {
       color: white; }
     body .my-section3 .my-section3-content {
@@ -429,8 +428,7 @@ body {
     -moz-align-content: center;
     -ms-align-content: center;
     align-content: center;
-    margin-bottom: 40px;
-    padding-bottom: 40px; }
+    padding-bottom: 80px; }
     body .my-section4 .my-section4-content {
       -webkit-box-flex: 0 0 100%;
       -moz-box-flex: 0 0 100%;
@@ -580,6 +578,11 @@ body {
                     padding-top: 20%; }
   body .my-section5 {
     position: relative;
+    -webkit-box-flex: 0 0 100%;
+    -moz-box-flex: 0 0 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -687,10 +690,8 @@ body {
             body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 img, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 img, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 img {
               max-width: 200px;
               max-height: 200px;
-              background-color: white;
               padding: 20px;
               background-color: lightgray;
-              margin: 0 auto;
               margin: 40px 0; }
               @media screen and (max-width: 576px) {
                 body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 img, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 img, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 img {
@@ -717,6 +718,270 @@ body {
               @media screen and (max-width: 576px) {
                 body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content1 .my-icons, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content2 .my-icons, body .my-section5 .my-carousel div div .my-carousel-item-content .my-carousel-item-content3 .my-icons {
                   margin: 10px 0; } }
+  body .my-section6 {
+    -webkit-box-flex: 0 0 100%;
+    -moz-box-flex: 0 0 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+    -ms-align-items: stretch;
+    align-items: stretch;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-content: center;
+    -moz-align-content: center;
+    -ms-align-content: center;
+    align-content: center; }
+    body .my-section6 .my-carousel {
+      padding: 10px 0 50px 0;
+      -webkit-box-flex: 0 1 100%;
+      -moz-box-flex: 0 1 100%;
+      -webkit-flex: 0 1 100%;
+      -ms-flex: 0 1 100%;
+      flex: 0 1 100%; }
+      body .my-section6 .my-carousel ol li {
+        background-color: gray; }
+      body .my-section6 .my-carousel ol .active {
+        background-color: black; }
+      body .my-section6 .my-carousel a {
+        visibility: hidden; }
+      body .my-section6 .my-carousel div div .my-carousel-item-content {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        -ms-flex-pack: center;
+        -webkit-align-content: center;
+        -moz-align-content: center;
+        -ms-align-content: center;
+        align-content: center;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        color: black; }
+        @media screen and (max-width: 576px) {
+          body .my-section6 .my-carousel div div .my-carousel-item-content {
+            -webkit-box-flex: 0 1 100%;
+            -moz-box-flex: 0 1 100%;
+            -webkit-flex: 0 1 100%;
+            -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+            height: 30%;
+            border: 1px solid lightgray; } }
+        body .my-section6 .my-carousel div div .my-carousel-item-content img {
+          -webkit-box-flex: 0 1 60%;
+          -moz-box-flex: 0 1 60%;
+          -webkit-flex: 0 1 60%;
+          -ms-flex: 0 1 60%;
+          flex: 0 1 60%;
+          max-width: 170px;
+          max-height: 170px;
+          padding: 10px;
+          background-color: lightgray;
+          margin: 20px 0; }
+          @media screen and (max-width: 576px) {
+            body .my-section6 .my-carousel div div .my-carousel-item-content img {
+              max-width: 140px;
+              max-height: 140px;
+              padding: 5px; } }
+        body .my-section6 .my-carousel div div .my-carousel-item-content img, body .my-section6 .my-carousel div div .my-carousel-item-content h3, body .my-section6 .my-carousel div div .my-carousel-item-content h4, body .my-section6 .my-carousel div div .my-carousel-item-content p {
+          text-align: center; }
+        body .my-section6 .my-carousel div div .my-carousel-item-content h3 {
+          -webkit-box-flex: 0 1 10%;
+          -moz-box-flex: 0 1 10%;
+          -webkit-flex: 0 1 10%;
+          -ms-flex: 0 1 10%;
+          flex: 0 1 10%;
+          font-weight: bold; }
+        body .my-section6 .my-carousel div div .my-carousel-item-content h4 {
+          -webkit-box-flex: 0 1 10%;
+          -moz-box-flex: 0 1 10%;
+          -webkit-flex: 0 1 10%;
+          -ms-flex: 0 1 10%;
+          flex: 0 1 10%;
+          font-size: 16px; }
+        body .my-section6 .my-carousel div div .my-carousel-item-content h1 {
+          -webkit-box-flex: 0 1 10%;
+          -moz-box-flex: 0 1 10%;
+          -webkit-flex: 0 1 10%;
+          -ms-flex: 0 1 10%;
+          flex: 0 1 10%;
+          font-size: 80px; }
+          @media screen and (max-width: 576px) {
+            body .my-section6 .my-carousel div div .my-carousel-item-content h1 {
+              font-size: 50px; } }
+        body .my-section6 .my-carousel div div .my-carousel-item-content p {
+          -webkit-box-flex: 0 1 10%;
+          -moz-box-flex: 0 1 10%;
+          -webkit-flex: 0 1 10%;
+          -ms-flex: 0 1 10%;
+          flex: 0 1 10%;
+          color: gray;
+          width: 60%; }
+          @media screen and (max-width: 576px) {
+            body .my-section6 .my-carousel div div .my-carousel-item-content p {
+              width: 80%; } }
+  body .my-section7 {
+    -webkit-box-flex: 0 0 100%;
+    -moz-box-flex: 0 0 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: 30px 0; }
+  body .my-section8 {
+    -webkit-box-flex: 0 0 100%;
+    -moz-box-flex: 0 0 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+    -ms-align-items: stretch;
+    align-items: stretch;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-content: center;
+    -moz-align-content: center;
+    -ms-align-content: center;
+    align-content: center;
+    padding-bottom: 80px; }
+    body .my-section8 .my-section8-pricing {
+      -webkit-box-flex: 0 0 100%;
+      -moz-box-flex: 0 0 100%;
+      -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      -webkit-align-content: center;
+      -moz-align-content: center;
+      -ms-align-content: center;
+      align-content: center;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 90%;
+      margin: 0 auto; }
+      body .my-section8 .my-section8-pricing .my-section8-plan {
+        -webkit-box-flex: 0 0 20%;
+        -moz-box-flex: 0 0 20%;
+        -webkit-flex: 0 0 20%;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        -ms-flex-pack: center;
+        -webkit-align-content: center;
+        -moz-align-content: center;
+        -ms-align-content: center;
+        align-content: center;
+        background-color: white;
+        margin: 15px;
+        padding: 20px 0;
+        border-radius: 5px; }
+        @media screen and (max-width: 576px) {
+          body .my-section8 .my-section8-pricing .my-section8-plan {
+            -webkit-box-flex: 0 1 90%;
+            -moz-box-flex: 0 1 90%;
+            -webkit-flex: 0 1 90%;
+            -ms-flex: 0 1 90%;
+            flex: 0 1 90%; } }
+        body .my-section8 .my-section8-pricing .my-section8-plan p, body .my-section8 .my-section8-pricing .my-section8-plan div {
+          text-align: center; }
+        body .my-section8 .my-section8-pricing .my-section8-plan > p {
+          font-size: 14px; }
+        body .my-section8 .my-section8-pricing .my-section8-plan .my-section8-plan-price h2 {
+          font-weight: bold; }
+        body .my-section8 .my-section8-pricing .my-section8-plan .my-section8-plan-price p {
+          color: gray;
+          line-height: 2%;
+          font-size: 12px; }
+        body .my-section8 .my-section8-pricing .my-section8-plan .my-section8-plan-text {
+          padding: 20px 0;
+          color: gray;
+          font-size: 12px;
+          line-height: 2%; }
+        body .my-section8 .my-section8-pricing .my-section8-plan .my-section8-button {
+          margin: 10px 0;
+          background-color: #2c2d30; }
+          body .my-section8 .my-section8-pricing .my-section8-plan .my-section8-button:hover {
+            background-color: #B98B59; }
+  body .my-section2, body .my-section4, body .my-section6, body .my-section8 {
+    background-color: #e8ebef; }
 
 .my-jumbo-button {
   background-color: #B98B59;

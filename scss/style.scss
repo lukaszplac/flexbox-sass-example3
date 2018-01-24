@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oleo+Script');
 $font-gray: #A9A9A9;
 $main-bg-color: white;
-$sub-bg-color: #f7f7f7;
+$sub-bg-color: #e8ebef;
 $border-color: #f1f1f1;
 $main-color-hover: #B98B59;
 
@@ -129,7 +129,7 @@ body {
 		@include align-items(center);
 		@include justify-content(center);
 		@include align-content(center);
-		margin-bottom: 80px;
+		padding-bottom: 80px;
 		.my-section2-content {
 			@include flex(0 0 100%);
 			@include flexbox();
@@ -194,8 +194,7 @@ body {
 		@include justify-content(center);
 		@include align-content(center);
 		background-color: black;
-		margin-bottom: 40px;
-		padding-bottom: 40px;
+		padding-bottom: 80px;
 		.my-section-heading {
 			h1 {
 				color: white;
@@ -259,8 +258,7 @@ body {
 		@include align-items(center);
 		@include justify-content(center);
 		@include align-content(center);
-		margin-bottom: 40px;
-		padding-bottom: 40px;
+		padding-bottom: 80px;
 		.my-section4-content {
 			@include flex(0 0 100%);
 			@include flexbox();
@@ -365,6 +363,7 @@ body {
 			display: block;
 		}
 		position: relative;
+		@include flex(0 0 100%);
 		@include flexbox();
 		@include flex-direction(column);
 		@include align-items(stretch);
@@ -413,10 +412,8 @@ body {
 							img {
 								max-width: 200px;
 								max-height: 200px;
-								background-color: white;
 								padding: 20px;
 								background-color: lightgray;
-								margin: 0 auto;
 								margin: 40px 0;
 								@media screen and (max-width: $small-dev) {
 									max-width: 100px;
@@ -455,6 +452,163 @@ body {
 				}
 			}
 		}
+	}
+
+	.my-section6 {
+		@include flex(0 0 100%);
+		@include flexbox();
+		@include flex-direction(column);
+		@include align-items(stretch);
+		@include justify-content(center);
+		@include align-content(center);
+		.my-carousel {
+			padding: 10px 0 50px 0;
+			ol {
+				li {
+					background-color: gray;
+				}
+				.active {
+					background-color: black;
+				}
+			}
+			@include flex(0 1 100%);
+			a {
+				visibility: hidden;
+			}
+			div {
+				div {
+					.my-carousel-item-content {
+						@include flexbox();
+						@include flex-direction(column);
+						@include align-items(center);
+						@include justify-content(center);
+						@include align-content(center);
+						@include flex-wrap(wrap);
+						color: black;
+						@media screen and (max-width: $small-dev) {
+							@include flex(0 1 100%);
+							height: 30%;
+							border: 1px solid lightgray;
+						}
+						img {
+							@include flex(0 1 60%);
+							max-width: 170px;
+							max-height: 170px;
+							padding: 10px;
+							background-color: lightgray;
+							margin: 20px 0;
+							@media screen and (max-width: $small-dev) {
+								max-width: 140px;
+								max-height: 140px;
+								padding: 5px;
+								}
+						}
+						img, h3, h4, p {
+							text-align: center;
+						}
+						h3 {
+							@include flex(0 1 10%);
+							font-weight: bold;
+						}
+						h4 {
+							@include flex(0 1 10%);
+							font-size: 16px;
+						}
+						h1 {
+							@include flex(0 1 10%);
+							font-size: 80px;
+							@media screen and (max-width: $small-dev) {
+								font-size: 50px;
+								}
+						}
+						p {
+							@include flex(0 1 10%);
+							color: gray;
+							width: 60%;
+							@media screen and (max-width: $small-dev) {
+								width: 80%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.my-section7 {
+		@include flex(0 0 100%);
+		border-top: 1px solid lightgray;
+		border-bottom: 1px solid lightgray;
+		padding: 30px 0;
+	}
+
+	.my-section8 {
+		@include flex(0 0 100%);
+		@include flexbox();
+		@include flex-direction(column);
+		@include align-items(stretch);
+		@include justify-content(center);
+		@include align-content(center);
+		padding-bottom: 80px;
+		.my-section8-pricing {
+			@include flex(0 0 100%);
+			@include flexbox();
+			@include flex-direction(row);
+			@include align-items(center);
+			@include justify-content(center);
+			@include align-content(center);
+			@include flex-wrap(wrap);
+			width: 90%;
+			margin: 0 auto;
+			.my-section8-plan {
+				@include flex(0 0 20%);
+				@media screen and (max-width: $small-dev) {
+					@include flex(0 1 90%);
+				}
+				@include flexbox();
+				@include flex-direction(column);
+				@include align-items(center);
+				@include justify-content(center);
+				@include align-content(center);
+				background-color: white;
+				margin: 15px;
+				padding: 20px 0;
+				border-radius: 5px;
+				p, div {
+					text-align: center;
+				}
+				>p {
+					font-size: 14px;
+				}
+				.my-section8-plan-price {
+					h2 {
+						font-weight: bold;
+					}
+					p {
+						color: gray;
+						line-height: 2%;
+						font-size: 12px;
+					}
+				}
+				.my-section8-plan-text {
+					padding: 20px 0;
+					color: gray;
+					font-size: 12px;
+					line-height: 2%;
+				}
+				.my-section8-button {
+					margin: 10px 0;
+					background-color: #2c2d30;
+					&:hover {
+						background-color: $main-color-hover;
+					}
+				}
+			}
+		}
+	}
+
+	.my-section2, .my-section4, .my-section6, .my-section8 {
+		background-color: $sub-bg-color;
 	}
 }
 
