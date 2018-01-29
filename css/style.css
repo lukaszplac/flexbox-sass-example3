@@ -458,11 +458,11 @@ body {
       -ms-align-content: center;
       align-content: center; }
       body .my-section4 .my-section4-content .my-section4-tabs-nav {
-        -webkit-box-flex: 0 0 100%;
-        -moz-box-flex: 0 0 100%;
-        -webkit-flex: 0 0 100%;
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
+        -webkit-box-flex: 0 1 20%;
+        -moz-box-flex: 0 1 20%;
+        -webkit-flex: 0 1 20%;
+        -ms-flex: 0 1 20%;
+        flex: 0 1 20%;
         margin: 20px 0;
         background-color: #edebec;
         border-radius: 30px;
@@ -488,11 +488,11 @@ body {
           body .my-section4 .my-section4-content .my-section4-tabs-nav li:last-child {
             border-right: none; }
       body .my-section4 .my-section4-content .my-section4-tabs {
-        -webkit-box-flex: 0 0 100%;
-        -moz-box-flex: 0 0 100%;
-        -webkit-flex: 0 0 100%;
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
+        -webkit-box-flex: 0 0 70%;
+        -moz-box-flex: 0 0 70%;
+        -webkit-flex: 0 0 70%;
+        -ms-flex: 0 0 70%;
+        flex: 0 0 70%;
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
@@ -574,6 +574,8 @@ body {
                     position: absolute;
                     top: 50%;
                     transform: translateY(-50%);
+                    -moz-transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
                     display: block;
                     padding-top: 20%; }
   body .my-section5 {
@@ -1008,7 +1010,7 @@ body {
     -moz-align-content: center;
     -ms-align-content: center;
     align-content: center;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
     width: 90%;
     margin: 0 auto; }
     body .my-section9 button {
@@ -1159,6 +1161,230 @@ body {
                 text-transform: uppercase; }
               body .my-section9 .my-carousel div div .my-carousel-item-content .my-carousel-item-content-right .my-carousel-item .my-carousel-text p {
                 color: gray; }
+  body .my-section10 {
+    -webkit-box-flex: 0 0 100%;
+    -moz-box-flex: 0 0 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+    -ms-align-items: stretch;
+    align-items: stretch;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-content: center;
+    -moz-align-content: center;
+    -ms-align-content: center;
+    align-content: center;
+    background-color: black;
+    padding-bottom: 60px; }
+    body .my-section10 .my-section-heading {
+      color: white; }
+      body .my-section10 .my-section-heading p {
+        color: gray; }
+    body .my-section10 .my-section10-facts {
+      -webkit-box-flex: 0 0 100%;
+      -moz-box-flex: 0 0 100%;
+      -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-align-items: flex-start;
+      -moz-align-items: flex-start;
+      -ms-align-items: flex-start;
+      align-items: flex-start;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      -webkit-align-content: center;
+      -moz-align-content: center;
+      -ms-align-content: center;
+      align-content: center;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      body .my-section10 .my-section10-facts .my-section10-fact {
+        -webkit-box-flex: 0 0 20%;
+        -moz-box-flex: 0 0 20%;
+        -webkit-flex: 0 0 20%;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        margin: 0 20px;
+        text-align: center; }
+        @media screen and (max-width: 576px) {
+          body .my-section10 .my-section10-facts .my-section10-fact {
+            -webkit-box-flex: 0 0 80%;
+            -moz-box-flex: 0 0 80%;
+            -webkit-flex: 0 0 80%;
+            -ms-flex: 0 0 80%;
+            flex: 0 0 80%; } }
+        body .my-section10 .my-section10-facts .my-section10-fact h2 {
+          letter-spacing: -3px;
+          line-height: 20px; }
+        body .my-section10 .my-section10-facts .my-section10-fact h1 {
+          color: #B98B59;
+          font-size: 50px; }
+        body .my-section10 .my-section10-facts .my-section10-fact h4 {
+          color: white;
+          text-transform: uppercase;
+          margin-bottom: 30px; }
+        body .my-section10 .my-section10-facts .my-section10-fact h1, body .my-section10 .my-section10-facts .my-section10-fact h2, body .my-section10 .my-section10-facts .my-section10-fact h4 {
+          font-weight: bold; }
+        body .my-section10 .my-section10-facts .my-section10-fact p, body .my-section10 .my-section10-facts .my-section10-fact h2 {
+          color: lightgray; }
+        body .my-section10 .my-section10-facts .my-section10-fact h2, body .my-section10 .my-section10-facts .my-section10-fact h1 {
+          margin: 0; }
+  body .my-section11 {
+    -webkit-box-flex: 0 0 100%;
+    -moz-box-flex: 0 0 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-content: center;
+    -moz-align-content: center;
+    -ms-align-content: center;
+    align-content: center;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border-bottom: 1px solid gray; }
+    body .my-section11 .my-section11-icon:not(:first-child) {
+      -webkit-box-flex: 0 0 8%;
+      -moz-box-flex: 0 0 8%;
+      -webkit-flex: 0 0 8%;
+      -ms-flex: 0 0 8%;
+      flex: 0 0 8%;
+      padding: 20px 5px; }
+      @media screen and (max-width: 576px) {
+        body .my-section11 .my-section11-icon:not(:first-child) {
+          -webkit-box-flex: 0 0 80%;
+          -moz-box-flex: 0 0 80%;
+          -webkit-flex: 0 0 80%;
+          -ms-flex: 0 0 80%;
+          flex: 0 0 80%; } }
+      body .my-section11 .my-section11-icon:not(:first-child) div {
+        color: white;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        padding: 5px;
+        height: 40px;
+        width: 40px; }
+        @media screen and (max-width: 576px) {
+          body .my-section11 .my-section11-icon:not(:first-child) div {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto; } }
+        body .my-section11 .my-section11-icon:not(:first-child) div i {
+          line-height: 150%;
+          font-size: 20px; }
+          @media screen and (max-width: 576px) {
+            body .my-section11 .my-section11-icon:not(:first-child) div i {
+              font-size: 40px;
+              line-height: 210%; } }
+        body .my-section11 .my-section11-icon:not(:first-child) div:hover {
+          opacity: .5;
+          cursor: pointer; }
+          body .my-section11 .my-section11-icon:not(:first-child) div:hover i {
+            color: black; }
+      body .my-section11 .my-section11-icon:not(:first-child) p {
+        display: inline;
+        font-size: 12px;
+        color: gray; }
+        @media screen and (max-width: 576px) {
+          body .my-section11 .my-section11-icon:not(:first-child) p {
+            display: block;
+            text-align: center; } }
+    body .my-section11 .my-section11-icon:first-child {
+      -webkit-box-flex: 0 0 20%;
+      -moz-box-flex: 0 0 20%;
+      -webkit-flex: 0 0 20%;
+      -ms-flex: 0 0 20%;
+      flex: 0 0 20%;
+      padding: 30px 5px; }
+      @media screen and (max-width: 576px) {
+        body .my-section11 .my-section11-icon:first-child {
+          -webkit-box-flex: 0 0 80%;
+          -moz-box-flex: 0 0 80%;
+          -webkit-flex: 0 0 80%;
+          -ms-flex: 0 0 80%;
+          flex: 0 0 80%; } }
+      body .my-section11 .my-section11-icon:first-child div {
+        display: inline-block;
+        text-align: center; }
+        @media screen and (max-width: 576px) {
+          body .my-section11 .my-section11-icon:first-child div {
+            display: block;
+            margin: 0 auto; } }
+      body .my-section11 .my-section11-icon:first-child i {
+        line-height: 100%;
+        font-size: 30px;
+        color: gray; }
+      body .my-section11 .my-section11-icon:first-child p {
+        display: inline;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: gray;
+        padding-left: 10px; }
+        @media screen and (max-width: 576px) {
+          body .my-section11 .my-section11-icon:first-child p {
+            display: block;
+            text-align: center; } }
+    body .my-section11 .my-section11-icon:nth-child(2) div {
+      background-color: #34C5F1; }
+    body .my-section11 .my-section11-icon:nth-child(3) div {
+      background-color: #127DB5; }
+    body .my-section11 .my-section11-icon:nth-child(4) div {
+      background-color: #336296; }
+    body .my-section11 .my-section11-icon:nth-child(5) div {
+      background-color: #E84138; }
+    body .my-section11 .my-section11-icon:nth-child(6) div {
+      background-color: #B91D28; }
   body .my-section2, body .my-section4, body .my-section6, body .my-section8 {
     background-color: #e8ebef; }
 

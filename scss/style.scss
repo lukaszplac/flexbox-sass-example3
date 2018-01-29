@@ -267,7 +267,7 @@ body {
 			@include justify-content(center);
 			@include align-content(center);
 			.my-section4-tabs-nav {
-				@include flex(0 0 100%);
+				@include flex(0 1 20%);
 				margin: 20px 0;
 				background-color: #edebec;
 				border-radius: 30px;
@@ -299,7 +299,7 @@ body {
 				}
 			}
 			.my-section4-tabs {
-				@include flex(0 0 100%);
+				@include flex(0 0 70%);
 				@include flexbox();
 				@include flex-direction(row);
 				@include align-items(center);
@@ -339,6 +339,8 @@ body {
 										position: absolute;
 										top: 50%;
 										transform: translateY(-50%);
+										-moz-transform: translateY(-50%);
+										-webkit-transform: translateY(-50%);
 										display: block;
 										padding-top: 20%;
 									}
@@ -614,7 +616,7 @@ body {
 		@include align-items(stretch);
 		@include justify-content(center);
 		@include align-content(center);
-		padding-bottom: 80px;
+		padding-bottom: 40px;
 		width: 90%;
 		margin: 0 auto;
 		button {
@@ -696,6 +698,178 @@ body {
 			}
 		}
 	}
+
+	.my-section10 {
+		@include flex(0 0 100%);
+		@include flexbox();
+		@include flex-direction(column);
+		@include align-items(stretch);
+		@include justify-content(center);
+		@include align-content(center);
+		background-color: black;
+		padding-bottom: 60px;
+		.my-section-heading {
+			color: white;
+			p {
+				color: gray;
+			}
+		}
+		.my-section10-facts {
+			@include flex(0 0 100%);
+			@include flexbox();
+			@include flex-direction(row);
+			@include align-items(flex-start);
+			@include justify-content(center);
+			@include align-content(center);
+			@include flex-wrap(wrap);
+			.my-section10-fact {
+				@include flex(0 0 20%);
+				margin: 0 20px;
+				text-align: center;
+				@media screen and (max-width: $small-dev) {
+					@include flex(0 0 80%);
+				}
+				h2 {
+					letter-spacing: -3px;
+					line-height: 20px;
+				}
+				h1 {
+					color: $main-color-hover;
+					font-size: 50px;
+				}
+				h4 {
+					color: white;
+					text-transform: uppercase;
+					margin-bottom: 30px;
+				}
+				h1, h2, h4 {
+					font-weight: bold;
+				}
+				p, h2 {
+					color: lightgray;
+
+				}
+				h2, h1 {
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	.my-section11 {
+		@include flex(0 0 100%);
+		@include flexbox();
+		@include flex-direction(row);
+		@include align-items(center);
+		@include justify-content(center);
+		@include align-content(center);
+		@include flex-wrap(wrap);
+		border-bottom: 1px solid gray;
+		.my-section11-icon:not(:first-child) {
+			@include flex(0 0 8%);
+			padding: 20px 5px;
+			@media screen and (max-width: $small-dev) {
+				@include flex(0 0 80%);
+			}
+			div {
+				color: white;
+				display: inline-block;
+				text-align: center;
+				border-radius: 50%;
+				padding: 5px;
+				height: 40px;
+				width: 40px;
+				@media screen and (max-width: $small-dev) {
+					width: 100px;
+					height: 100px;
+					display: block;
+					margin: 0 auto;
+				}
+				i {
+					line-height: 150%;
+					font-size: 20px;
+					@media screen and (max-width: $small-dev) {
+						font-size: 40px;
+						line-height: 210%;
+					}
+				}
+				&:hover {
+					opacity: .5;
+					cursor: pointer;
+					i {
+						color: black;
+					}
+				}
+			}
+			p {
+				display: inline;
+				font-size: 12px;
+				color: gray;
+				@media screen and (max-width: $small-dev) {
+					display: block;
+					text-align: center;
+				}
+			}
+		}
+		.my-section11-icon:first-child {
+			@include flex(0 0 20%);
+			padding: 30px 5px;
+			@media screen and (max-width: $small-dev) {
+				@include flex(0 0 80%);
+			}
+			div {
+				display: inline-block;
+				text-align: center;
+				@media screen and (max-width: $small-dev) {
+					display: block;
+					margin: 0 auto;
+				}
+			}
+			i {
+				line-height: 100%;
+				font-size: 30px;
+				color: gray;
+			}
+			p {
+				display: inline;
+				font-size: 16px;
+				font-weight: bold;
+				text-transform: uppercase;
+				color: gray;
+				padding-left: 10px;
+				@media screen and (max-width: $small-dev) {
+					display: block;
+					text-align: center;
+				}
+			}
+		}
+		.my-section11-icon:nth-child(2) {
+			div {
+				background-color: #34C5F1;
+			}
+		}
+		.my-section11-icon:nth-child(3) {
+			div {
+				background-color: #127DB5;
+			}
+		}
+		.my-section11-icon:nth-child(4) {
+			div {
+				background-color: #336296;
+			}
+		}
+		.my-section11-icon:nth-child(5) {
+			div {
+				background-color: #E84138;
+			}
+		}
+		.my-section11-icon:nth-child(6) {
+			div {
+				background-color: #B91D28;
+			}
+		}
+	}
+
 	.my-section2, .my-section4, .my-section6, .my-section8 {
 		background-color: $sub-bg-color;
 	}
