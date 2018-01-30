@@ -870,7 +870,39 @@ body {
 		}
 	}
 
-	.my-section2, .my-section4, .my-section6, .my-section8 {
+	.my-section12 {
+		@include flex(0 0 100%);
+		@include flexbox();
+		@include flex-direction(column);
+		@include align-items(center);
+		@include justify-content(center);
+		@include align-content(center);
+		@include flex-wrap(nowrap);
+		.my-section12-form {
+			@include flex(0 0 100%);
+			@include flexbox();
+			@include flex-direction(column);
+			@include align-items(center);
+			@include justify-content(center);
+			@include align-content(center);
+			@include flex-wrap(nowrap);
+			.my-section12-nameEmail {
+				@include flexbox();
+				@include flex-direction(row);
+				@include align-items(center);
+				@include justify-content(center);
+				@include align-content(center);
+				@include flex-wrap(nowrap);
+				input {
+					@include flex(0 0 20%);
+				}
+			}
+			.my-section12-other {
+			}
+		}
+	}
+
+	.my-section2, .my-section4, .my-section6, .my-section8, .my-section12 {
 		background-color: $sub-bg-color;
 	}
 }
