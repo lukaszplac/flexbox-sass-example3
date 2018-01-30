@@ -1448,13 +1448,14 @@ body {
       -webkit-flex-wrap: nowrap;
       -moz-flex-wrap: nowrap;
       -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap; }
+      flex-wrap: nowrap;
+      width: 100vw; }
       body .my-section12 .my-section12-form .my-section12-nameEmail {
-        -webkit-box-flex: 0 0 20%;
-        -moz-box-flex: 0 0 20%;
-        -webkit-flex: 0 0 20%;
-        -ms-flex: 0 0 20%;
-        flex: 0 0 20%;
+        -webkit-box-flex: 0 0 40%;
+        -moz-box-flex: 0 0 40%;
+        -webkit-flex: 0 0 40%;
+        -ms-flex: 0 0 40%;
+        flex: 0 0 40%;
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
@@ -1477,28 +1478,75 @@ body {
         -moz-align-content: center;
         -ms-align-content: center;
         align-content: center;
-        -webkit-flex-wrap: nowrap;
-        -moz-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        width: 70%; }
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 100vw; }
         body .my-section12 .my-section12-form .my-section12-nameEmail input {
-          -webkit-box-flex: 0 0 20%;
-          -moz-box-flex: 0 0 20%;
-          -webkit-flex: 0 0 20%;
-          -ms-flex: 0 0 20%;
-          flex: 0 0 20%; }
+          width: 20%;
+          border: none;
+          border-bottom: 2px solid #AEAEAE;
+          background-color: #e8ebef;
+          margin-bottom: 30px;
+          border-radius: 0; }
+          @media screen and (max-width: 576px) {
+            body .my-section12 .my-section12-form .my-section12-nameEmail input {
+              width: 80vw; } }
+          body .my-section12 .my-section12-form .my-section12-nameEmail input:last-child {
+            margin-left: 3%; }
+            @media screen and (max-width: 576px) {
+              body .my-section12 .my-section12-form .my-section12-nameEmail input:last-child {
+                margin-left: 0; } }
       body .my-section12 .my-section12-form .my-section12-other {
-        width: 70%;
-        -webkit-box-flex: 0 0 20%;
-        -moz-box-flex: 0 0 20%;
-        -webkit-flex: 0 0 20%;
-        -ms-flex: 0 0 20%;
-        flex: 0 0 20%; }
+        -webkit-box-flex: 0 0 40%;
+        -moz-box-flex: 0 0 40%;
+        -webkit-flex: 0 0 40%;
+        -ms-flex: 0 0 40%;
+        flex: 0 0 40%;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        -ms-flex-pack: center;
+        -webkit-align-content: center;
+        -moz-align-content: center;
+        -ms-align-content: center;
+        align-content: center;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 100vw; }
+        body .my-section12 .my-section12-form .my-section12-other input {
+          margin: 0 auto;
+          width: 43%;
+          border: none;
+          border-bottom: 2px solid #AEAEAE;
+          background-color: #e8ebef;
+          border-radius: 0; }
+          @media screen and (max-width: 576px) {
+            body .my-section12 .my-section12-form .my-section12-other input {
+              width: 80vw; } }
+          body .my-section12 .my-section12-form .my-section12-other input:last-child {
+            margin-top: 60px; }
+            @media screen and (max-width: 576px) {
+              body .my-section12 .my-section12-form .my-section12-other input:last-child {
+                width: 80vw; } }
+        body .my-section12 .my-section12-form .my-section12-other .my-section12-button {
+          margin-top: 40px; }
   body .my-section2, body .my-section4, body .my-section6, body .my-section8, body .my-section12 {
     background-color: #e8ebef; }
 
-.my-jumbo-button {
+.my-jumbo-button, .my-section12-button {
   background-color: #B98B59;
   color: white;
   text-transform: uppercase;
@@ -1508,15 +1556,18 @@ body {
   margin: 20px 0;
   font-size: 16px;
   font-weight: bold; }
-  .my-jumbo-button:hover {
+  .my-jumbo-button:hover, .my-section12-button:hover {
     background-color: rgba(185, 139, 89, 0.5);
     color: white;
     cursor: pointer; }
   @media screen and (max-width: 576px) {
-    .my-jumbo-button {
+    .my-jumbo-button, .my-section12-button {
       padding: 5px 20px;
       margin: 10px 0;
       font-size: 10px; } }
+
+.my-section12-button {
+  margin-top: 50px; }
 
 .my-section-heading {
   padding: 70px 0 30px 0;
