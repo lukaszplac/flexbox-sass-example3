@@ -999,6 +999,103 @@ body {
 			}
 		}
 	}
+
+	.my-section-footer {
+		@include flex(0 1 90%);
+		@include flexbox();
+		@include flex-direction(row);
+		@include align-items(center);
+		@include justify-content(center);
+		@include align-content(center);
+		@include flex-wrap(wrap);
+		background-color: black;
+		padding: 30px 0;
+		.my-section-footer-item1 {
+			@include flex(0 1 30%);
+			@media screen and (max-width: $small-dev) {
+				@include order(3);
+				margin-top: 20px;
+			}
+			height: 100%;
+			@include flexbox();
+			@include flex-direction(column);
+			@include align-items(flex-start);
+			@include justify-content(space-between);
+			@include align-content(center);
+			@include flex-wrap(wrap);
+			color: white;
+			.my-footer-icons {
+				div {
+					background-color: #414347;
+					line-height: 190%;
+					font-size: 18px;
+					display: inline-block;
+					text-align: center;
+					border-radius: 50%;
+					height: 35px;
+					width: 35px;
+					margin-right: 2px;
+					@media screen and (max-width: $small-dev) {
+						height: 30px;
+						width: 30px;
+						line-height: 160%;
+					}
+					&:hover {
+						background-color: $main-color-hover;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+		p {
+			@media screen and (max-width: $small-dev) {
+				margin-top: 10px;
+				font-size: 12px;
+			}
+		}
+		.my-section-footer-item2 {
+			@include flex(0 1 25%);
+			height: 100%;
+			color: gray;
+			margin: 0 15px;
+			p {
+				font-size: 14px;	
+			}
+		}
+		.my-section-footer-item3 {
+			background-color: #414347;
+			@include flex(0 1 25%);
+			@include flexbox();
+			@include flex-direction(column);
+			@include align-items(center);
+			@include justify-content(center);
+			@include align-content(center);
+			height: 100%;
+			text-align: center;
+			border-radius: 4px;
+			input {
+				@include flex(0 1 auto);
+				color: gray;
+				margin: 0 auto;
+				width: 60%;
+				text-align: center;
+				border: none;
+				border-bottom: 2px solid #AEAEAE;
+				background-color: #414347;
+				border-radius: 0;
+				@media screen and (max-width: $small-dev) {
+					font-size: smaller;
+				}
+			}
+		}
+		.my-section-footer-item1, .my-section-footer-item2, .my-section-footer-item3{
+			@media screen and (max-width: $small-dev) {
+				@include flex(0 1 80%);
+				height: auto;
+			}
+		}
+	}
+
 	.my-section2, .my-section4, .my-section6, .my-section8, .my-section12 {
 		background-color: $sub-bg-color;
 	}
