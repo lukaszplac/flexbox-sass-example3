@@ -968,7 +968,7 @@ body {
 		background-size: cover;
 		padding: 50px 0 50px 150px;
 		@media screen and (max-width: $small-dev) {
-			padding: 15px;
+			padding: 30px 15px 30px 15px;
 			@include justify-content(center);
 		}
 		.my-section13-contact {
@@ -1187,10 +1187,19 @@ body {
 		background-color: black;
 		cursor: pointer;
 	}
+	@media screen and (max-width: $small-dev) {
+		width: 40px;
+		height: 40px;
+		right: 40px;
+		font-size: 8px;
+	}
 }
 
 .section12-angle-up {
 	left: 30px;
 	color: white;
 	transform: translateY(-85%);
+	@media screen and (max-width: $small-dev) {
+		transform: translateY(-120%);
+	}
 }
