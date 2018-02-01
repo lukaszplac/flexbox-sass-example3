@@ -23,9 +23,6 @@ body {
 	@include align-items(stretch); //items inside are stretched to fit the container
 	@include justify-content(flex-start); //The justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis
 	@include align-content(flex-start); //The align-content property modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines.
-	@media (min-width: $big-screen) {
-		margin-bottom: 7%; //bug with dissapearing footer corrected for big screens
-	}
 	.my-jumbotron {
 		@include flex(0 0 100%);
 		@include flexbox();
@@ -86,6 +83,7 @@ body {
 			}
 		}
 		.my-carousel {
+			position: relative;
 			img {
 				opacity: 0.5;
 			}
@@ -969,11 +967,19 @@ body {
 		background-image: url('../images/build/map.jpg');
 		background-size: cover;
 		padding: 50px 0 50px 150px;
+		@media screen and (max-width: $small-dev) {
+			padding: 15px;
+			@include justify-content(center);
+		}
 		.my-section13-contact {
 			z-index: 1;
 			@include flex(0 0 45%);
 			padding: 45px 10px 45px 30px;
 			background-color: white;
+			@media screen and (max-width: $small-dev) {
+				@include flex(0 0 95%);
+				padding: 20px 5px 20px 5px;
+			}
 			div {
 				margin-bottom: 5px;
 				div {
@@ -985,16 +991,27 @@ body {
 					height: 42px;
 					width: 42px;
 					margin-right: 20px;
+					@media screen and (max-width: $small-dev) {
+						height: 30px;
+						width: 30px;
+						margin-right: 5px;
+					}
 					i {
 						padding: 3px;
 						font-size: 24px;
 						line-height: 140%;
+						@media screen and (max-width: $small-dev) {
+							font-size: 16px;
+						}
 					}
 				}
 				p {
 					color: gray;
 					display: inline;
-					font-size: 14px;	
+					font-size: 14px;
+					@media screen and (max-width: $small-dev) {
+						font-size: 8px;
+					}
 				}
 			}
 		}
@@ -1004,12 +1021,16 @@ body {
 		@include flex(0 1 90%);
 		@include flexbox();
 		@include flex-direction(row);
-		@include align-items(center);
+		@include align-items(stretch);
 		@include justify-content(center);
 		@include align-content(center);
 		@include flex-wrap(wrap);
 		background-color: black;
 		padding: 30px 0;
+		height: 250px;
+		@media screen and (max-width: $small-dev) {
+			height: auto;
+		}
 		.my-section-footer-item1 {
 			@include flex(0 1 30%);
 			@media screen and (max-width: $small-dev) {
@@ -1059,7 +1080,7 @@ body {
 			color: gray;
 			margin: 0 15px;
 			p {
-				font-size: 14px;	
+				font-size: 14px;
 			}
 		}
 		.my-section-footer-item3 {
@@ -1148,4 +1169,28 @@ body {
 		font-size: 14px;
 		color: $font-gray;
 	}
+}
+
+.carousel-call, .section12-angle-up {
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	line-height: 650%;
+	background-color: $main-color-hover;
+	width: 80px;
+	height: 80px;
+	right: 80px;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	box-shadow: 5px 5px 20px gray;
+	&:hover {
+		background-color: black;
+		cursor: pointer;
+	}
+}
+
+.section12-angle-up {
+	left: 30px;
+	color: white;
+	transform: translateY(-85%);
 }
